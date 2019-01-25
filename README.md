@@ -1,4 +1,4 @@
-* 요즘 Sigmoid 보다 ReLU를 많이 쓰는데 그 이유는?
+### 요즘 Sigmoid 보다 ReLU를 많이 쓰는데 그 이유는?
   Non-Linearity라는 말의 의미와 그 필요성은?
   ReLU로 어떻게 곡선 함수를 근사하나?
   ReLU의 문제점은?
