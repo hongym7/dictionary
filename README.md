@@ -1,10 +1,10 @@
-### 요즘 Sigmoid 보다 ReLU를 많이 쓰는데 그 이유는?
+### Q)요즘 Sigmoid 보다 ReLU를 많이 쓰는데 그 이유는?
   Non-Linearity라는 말의 의미와 그 필요성은?  
   ReLU로 어떻게 곡선 함수를 근사하나?  
   ReLU의 문제점은?  
   Bias는 왜 있는걸까?
 
-A) Neural Network에서 신경망이 깊어질수록 학습이 어렵기 때문에, 전체 레이어를 한번 계산한 후, 그 계산 값을 재활용 하여, 다시 계산하는 Back propagation이라는 방법을 사용하는데, sigmoid 함수를 activation 함수로 사용할 경우, 레이어가 깊어지면 back propagation이 제대로 작동하지 않기 때문에,(값을 뒤에서 앞으로 전달할 때 희석이 되는 현상. 이를 Gradient Vanishing 이라고 한다) ReLu를 사용
+#### A) Neural Network에서 신경망이 깊어질수록 학습이 어렵기 때문에, 전체 레이어를 한번 계산한 후, 그 계산 값을 재활용 하여, 다시 계산하는 Back propagation이라는 방법을 사용하는데, sigmoid 함수를 activation 함수로 사용할 경우, 레이어가 깊어지면 back propagation이 제대로 작동하지 않기 때문에,(값을 뒤에서 앞으로 전달할 때 희석이 되는 현상. 이를 Gradient Vanishing 이라고 한다) ReLu를 사용
 
 + ReLU의 문제점 : 입력값이 <0 일시, 함수 미분값이 0이 되는 약점이 있음.
 	PReLU : ReLU의 입력값이 <0 일때의 약점을 보완함 (상대적으로 인기가 없음… 왜?)
